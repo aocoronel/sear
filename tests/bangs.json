@@ -1,0 +1,80 @@
+[
+  {
+    "s": "Github",
+    "d": "github.com",
+    "t": "git",
+    "u": "https://github.com/search?utf8=%E2%9C%93&q={{{s}}}"
+  },
+  {
+    "s": "Mozilla Addons",
+    "d": "addons.mozilla.org",
+    "t": "ma",
+    "u": "https://addons.mozilla.org/en-US/firefox/search/?q={{{s}}}"
+  },
+  {
+    "s": "PubMed",
+    "d": "pubmed.ncbi.nlm.gov",
+    "t": "pm",
+    "u": "https://pubmed.ncbi.nlm.nih.gov/?term={{{s}}}&filter=simsearch2.ffrft"
+  },
+  {
+    "s": "AlternativeTo",
+    "d": "alternativeto.net",
+    "t": "alt",
+    "u": "https://alternativeto.net/software/{{{s}}}"
+  },
+  {
+    "s": "SciELO",
+    "d": "scielo.org",
+    "t": "sci",
+    "u": "https://search.scielo.org/?lang=en&count=15&from=0&output=site&sort=&format=summary&fb=&page=1&q={{{s}}}"
+  },
+  {
+    "s": "DuckDuckGo",
+    "d": "duckduckgo.com",
+    "t": "ddg",
+    "u": "https://duckduckgo.com/?q=!safeoff+{{{s}}}"
+  },
+  {
+    "s": "Leta",
+    "d": "leta.mullvad.net",
+    "t": "leta",
+    "u": "https://leta.mullvad.net/search?q={{{s}}}&engine=google"
+  },
+  {
+    "s": "StackExchange Security",
+    "d": "security.stackexchange.com",
+    "t": "ssx",
+    "u": "https://security.stackexchange.com/search?q={{{s}}}"
+  },
+  {
+    "s": "Perplexity AI",
+    "d": "perplexity.ai",
+    "t": "px",
+    "u": "https://perplexity.ai/?q={{{s}}}"
+  },
+  {
+    "s": "Stack Overflow",
+    "d": "stackoverflow.com",
+    "t": "so",
+    "u": "https://stackoverflow.com/search?q={{{s}}}"
+  },
+  {
+    "s": "StartPage",
+    "d": "startpage.com",
+    "t": "sp",
+    "u": "https://startpage.com/do/search?prf=2cc506ab255c98e10570b7d50ef6b1c8&cat=web&query={{{s}}}"
+  },
+  {
+    "s": "Arch Wiki",
+    "d": "wiki.archlinux.org",
+    "t": "ar",
+    "u": "https://wiki.archlinux.org/index.php?title=Special:Search&search={{{s}}}&go=Go"
+  },
+  {
+    "s": "Gentoo Wiki",
+    "d": "wiki.gentoo.org",
+    "t": "gt",
+    "u": "https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={{{s}}}&go=Go"
+  }
+]
