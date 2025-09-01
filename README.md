@@ -39,13 +39,13 @@ nimble install https://github.com/aocoronel/sear
 Interact with Kagi Bangs in the CLI
 
 Usage:
-  searc COMMAND|BANG QUERY FLAG <FLAG_INPUT>
+  sear COMMAND|BANG QUERY OPTION
 
 Commands:
   list      Lists all bangs
   inspect   Output json file
 
-Flags:
+Options:
   -b, --browser    Open search in the browser
 ```
 
