@@ -5,48 +5,54 @@
 Essentially, it allows you configure a `json` file to predefine a search query, and quickly replace the query template and open in a browser.
 
 ```bash
-sear pm Leishmaniosis
+python sear pm Leishmaniosis
 # Output
 # https://pubmed.ncbi.nlm.nih.gov/?term=Leishmaniosis&filter=simsearch2.ffrft
-```
-
-Currently, `sear` only supports the `s`, `t` and `u` keys. Illustratively:
-
-```diff
-{
-  "s": "Metacritic",
-- "d": "www.metacritic.com",
-  "t": "mc",
-  "u": "https://www.metacritic.com/search/{{{s}}}/",
-- "c": "Online Services",
-- "sc": "Search"
-}
 ```
 
 ## Features
 
 - Open links in a browser
+- Find bangs by any JSON key
 
 ## Installation
 
 ```bash
-nimble install https://github.com/aocoronel/sear
+git clone https://github.com/aocoronel/sear
+chmod +x sear/src/sear.py
+mv sear/src/sear.py ~/.local/bin
 ```
 
 ## Usage
 
 ```
-Interact with Kagi Bangs in the CLI
+usage:
+  sear.py COMMAND|BANG QUERY [FLAGS]
 
-Usage:
-  sear COMMAND|BANG QUERY OPTION
+commands:
+  list             Lists all bangs
+  inspect          Output json file
+  find [BANG_NAME] Find a bang with a specified name
 
-Commands:
-  list      Lists all bangs
-  inspect   Output json file
+positional arguments:
+  args                  Command or bang search
 
-Options:
-  -b, --browser    Open search in the browser
+options:
+  -h, --help            show this help message and exit
+  -c, --config CONFIG   Path to bangs JSON file
+  -b, --browser         Open URL in browser
+  -f, --findkey FINDKEY
+                        Key to search for in 'find' (e.g., s, t, u)
+  -l, --inline          Find results are inline
+```
+
+## Scripting
+
+Combine this script with the power of `fzf` to interactively select a bang:
+
+```bash
+read -rp "Enter your query: " QUERY
+python sear.py -l find "" -c bangs.json | fzf | awk -F "|" '{print $6}' | sed 's|{{{s}}}|$QUERY|' | xargs -I {} xdg-open {}
 ```
 
 ## License
