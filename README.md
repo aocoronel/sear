@@ -15,14 +15,6 @@ python sear pm Leishmaniosis
 - Open links in a browser
 - Find bangs by any JSON key
 
-## Installation
-
-```bash
-git clone https://github.com/aocoronel/sear
-chmod +x sear/src/sear.py
-mv sear/src/sear.py ~/.local/bin
-```
-
 ## Usage
 
 ```
