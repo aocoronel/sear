@@ -1,0 +1,45 @@
+.TH sear 1 "Commands"
+.SH NAME
+.B sear
+\- a kagi bangs utility
+.SH SYNOPSIS
+.B sear
+.I <OPTION> [COMMAND] <ARGUMENT>
+.SH DESCRIPTION
+Use Kagi Bangs to search directly into website searches.
+.SH COMMANDS
+.TP
+.B list
+Lists all bangs in a readable way. The result allows to correlate a shortcode to a website.
+.TP
+.B inspect
+Outputs the JSON file in a simpler format.
+.TP
+.B find [KEY] [SEARCH]
+Finds a specified element from a JSON key.
+
+Example: sear find s GitHub
+.SH OPTIONS
+.TP
+.B -h, --help
+Display the help message and exits.
+.TP
+.B -c, --config [FILE]
+Uses an specified bangs file (JSON), instead of the default ./bangs.json.
+.TP
+.B -b, --browser
+Open the generated URL in the default browser.
+.TP
+.B -f, --findkey [KEY] find
+Search a different JSON key from the bang file. Defaults to 's'.
+
+The available keys, include 's', 't', 'u', 'd', 'c' and 'sc'.
+.TP
+.B -l, --inline
+Turn the find command results to be inlined, separated by pipes.
+.SH FILES
+The default file loaded is called bangs.json at the current directory, which the program is ran.
+
+For more detail on how a bangs.json is structured. See more at https://github.com/kagisearch/bangs.
+.SH SEE ALSO
+https://github.com/kagisearch/bangs
