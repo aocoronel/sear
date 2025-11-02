@@ -1,5 +1,8 @@
 # Interact with Kagi Bangs in the CLI
 
+> [!WARNING]
+> This repository has been moved to Codeberg. Find it at [aocoronel/sear](https://codeberg.org/aocoronel/sear).
+
 `sear` allows you to use the powerful [Kagi Bangs](https://github.com/kagisearch/bangs) from the CLI. Check the official bang repository to know more about it.
 
 Essentially, it allows you configure a `json` file to predefine a search query, and quickly replace the query template and open in a browser.
